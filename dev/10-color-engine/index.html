@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Color Engine — MaterialColors.jl</title>
-  <link rel="stylesheet" href="../assets/materialdocs.css?v=91c4200c">
+  <title>Color Engine — MaterialDesignColors.jl</title>
+  <link rel="stylesheet" href="../assets/materialdocs.css?v=46da2038">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap">
   <script>
     (function(){
@@ -17,7 +17,7 @@
 <body>
   <header class="md-navbar">
     <button id="md-hamburger" class="md-icon-btn md-hamburger" aria-label="Toggle navigation" aria-expanded="false"><svg class="md-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
-    <span class="md-navbar-title">MaterialColors.jl</span>
+    <span class="md-navbar-title">MaterialDesignColors.jl</span>
     <span class="md-navbar-spacer"></span>
     <button id="md-search-btn" class="md-search-bar" aria-label="Search documentation" aria-expanded="false">
       <svg class="md-icon md-search-bar-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
@@ -31,24 +31,24 @@
       </button>
       <ul id="md-version-menu" class="md-version-menu" role="listbox" hidden></ul>
     </div>
-    <a class="md-icon-btn md-repo-link" href="https://github.com/mthelm85/MaterialColors.jl" title="View the repository on GitHub" aria-label="View the repository on GitHub" rel="noopener" target="_blank"><svg class="md-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0012 .3z"/></svg><span class="md-repo-label">GitHub</span></a>
+    <a class="md-icon-btn md-repo-link" href="https://github.com/mthelm85/MaterialDesignColors.jl" title="View the repository on GitHub" aria-label="View the repository on GitHub" rel="noopener" target="_blank"><svg class="md-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0012 .3z"/></svg><span class="md-repo-label">GitHub</span></a>
     <button id="md-theme-toggle" class="md-icon-btn" title="Toggle dark mode" aria-label="Toggle dark mode"><svg class="md-icon md-icon-light" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg><svg class="md-icon md-icon-dark" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg></button>
   </header>
   <div class="md-layout">
     <nav class="md-sidebar">
-      <a href="../">MaterialColors.jl</a>
+      <a href="../">MaterialDesignColors.jl</a>
       <a href="../10-color-engine/">Color Engine</a>
       <a href="../95-reference/">Reference</a>
     </nav>
     <main class="md-content">
       <article class="md-article">
 <h1 id="Color-Engine" class="md-heading">Color Engine<a href="#Color-Engine" class="md-heading-anchor" aria-label="Link to this section">#</a></h1>
-<p>MaterialColors is a pure-Julia port of Google&#39;s <a href="https://github.com/material-foundation/material-color-utilities">material-color-utilities</a>: the CAM16 appearance model, the HCT color space, tonal palettes, Material Design 3 scheme generation, and WCAG contrast helpers.</p>
+<p>MaterialDesignColors is a pure-Julia port of Google&#39;s <a href="https://github.com/material-foundation/material-color-utilities">material-color-utilities</a>: the CAM16 appearance model, the HCT color space, tonal palettes, Material Design 3 scheme generation, and WCAG contrast helpers.</p>
 <h2 id="HCT" class="md-heading">HCT<a href="#HCT" class="md-heading-anchor" aria-label="Link to this section">#</a></h2>
 <p>HCT combines the hue and chroma of the CAM16 color appearance model with the lightness (<code class="md-code-inline">L*</code>) of CIELAB. Its value is that <strong>tone maps directly to contrast</strong>: two colors 40 tones apart have a predictable contrast ratio regardless of hue. That is what lets a whole palette be generated from one color without hand-tuning.</p>
 <div class="md-code-block">
 <button class="md-copy-btn" title="Copy to clipboard" aria-label="Copy code"><span class="md-copy-icon">⧉</span><span class="md-copy-feedback">Copied!</span></button>
-<pre><code class="language-julia-repl">julia&gt; using MaterialColors
+<pre><code class="language-julia-repl">julia&gt; using MaterialDesignColors
 
 julia&gt; c = hct(&quot;#6750A4&quot;)
 HCT(hue=299.0, chroma=48.2, tone=40.1)
@@ -61,7 +61,7 @@ julia&gt; to_hex(c)
 <p><code class="md-code-inline">HCT</code> is a <code class="md-code-inline">ColorTypes.Color{Float64,3}</code>, so it dispatches anywhere a <code class="md-code-inline">Colorant</code> is accepted and converts to and from the RGB family:</p>
 <div class="md-code-block">
 <button class="md-copy-btn" title="Copy to clipboard" aria-label="Copy code"><span class="md-copy-icon">⧉</span><span class="md-copy-feedback">Copied!</span></button>
-<pre><code class="language-julia">using MaterialColors, Colors
+<pre><code class="language-julia">using MaterialDesignColors, Colors
 
 convert(RGB, hct(&quot;#6750A4&quot;))     # RGB{Float64}(0.404, 0.314, 0.643)
 hct(colorant&quot;rebeccapurple&quot;)     # HCT from any Colorant</code></pre>
@@ -74,7 +74,7 @@ hct(colorant&quot;rebeccapurple&quot;)     # HCT from any Colorant</code></pre>
 </div>
 </div>
 <h2 id="Tonal-palettes" class="md-heading">Tonal palettes<a href="#Tonal-palettes" class="md-heading-anchor" aria-label="Link to this section">#</a></h2>
-<p>A <a href="../95-reference/#MaterialColors.TonalPalette"><code class="md-code-inline">TonalPalette</code></a> is one hue and chroma sampled across the tone range:</p>
+<p>A <a href="../95-reference/#MaterialDesignColors.TonalPalette"><code class="md-code-inline">TonalPalette</code></a> is one hue and chroma sampled across the tone range:</p>
 <div class="md-code-block">
 <button class="md-copy-btn" title="Copy to clipboard" aria-label="Copy code"><span class="md-copy-icon">⧉</span><span class="md-copy-feedback">Copied!</span></button>
 <pre><code class="language-julia">p = tonal_palette(&quot;#6750A4&quot;)
@@ -82,9 +82,9 @@ tone_at(p, 40)           # HCT at tone 40 — primary in a light scheme
 to_hex(tone_at(p, 80))   # &quot;#CFBCFF&quot; — primary in a dark scheme
 p[90]                    # indexing is an alias for tone_at</code></pre>
 </div>
-<p>A palette returns <code class="md-code-inline">HCT</code> values, carrying its hue and chroma at exactly the tone you asked for; gamut mapping happens when you convert with <code class="md-code-inline">to_hex</code> or <code class="md-code-inline">convert(RGB, …)</code>. Tones are cached as requested, and <a href="../95-reference/#MaterialColors.precompute!-Tuple{TonalPalette}"><code class="md-code-inline">precompute!</code></a> fills the standard MD3 tone stops in one pass.</p>
+<p>A palette returns <code class="md-code-inline">HCT</code> values, carrying its hue and chroma at exactly the tone you asked for; gamut mapping happens when you convert with <code class="md-code-inline">to_hex</code> or <code class="md-code-inline">convert(RGB, …)</code>. Tones are cached as requested, and <a href="../95-reference/#MaterialDesignColors.precompute!-Tuple{TonalPalette}"><code class="md-code-inline">precompute!</code></a> fills the standard MD3 tone stops in one pass.</p>
 <h2 id="Schemes" class="md-heading">Schemes<a href="#Schemes" class="md-heading-anchor" aria-label="Link to this section">#</a></h2>
-<p><a href="../95-reference/#MaterialColors.color_scheme-Tuple{AbstractString}"><code class="md-code-inline">color_scheme</code></a> generates the 34 MD3 roles from a seed, as colors:</p>
+<p><a href="../95-reference/#MaterialDesignColors.color_scheme-Tuple{AbstractString}"><code class="md-code-inline">color_scheme</code></a> generates the 34 MD3 roles from a seed, as colors:</p>
 <div class="md-code-block">
 <button class="md-copy-btn" title="Copy to clipboard" aria-label="Copy code"><span class="md-copy-icon">⧉</span><span class="md-copy-feedback">Copied!</span></button>
 <pre><code class="language-julia">light = color_scheme(&quot;#6750A4&quot;)
@@ -93,7 +93,7 @@ dark  = color_scheme(&quot;#6750A4&quot;; dark = true)
 light[:primary]              # RGB{Float64}
 light[:on_primary_container]</code></pre>
 </div>
-<p><a href="../95-reference/#MaterialColors.color_scheme_pair-Tuple{AbstractString}"><code class="md-code-inline">color_scheme_pair</code></a> returns both at once. When you need CSS strings rather than colors, <a href="../95-reference/#MaterialColors.hex_scheme-Tuple{AbstractString}"><code class="md-code-inline">hex_scheme</code></a> and <a href="../95-reference/#MaterialColors.hex_scheme_pair-Tuple{AbstractString}"><code class="md-code-inline">hex_scheme_pair</code></a> return the same roles formatted as <code class="md-code-inline">#RRGGBB</code>.</p>
+<p><a href="../95-reference/#MaterialDesignColors.color_scheme_pair-Tuple{AbstractString}"><code class="md-code-inline">color_scheme_pair</code></a> returns both at once. When you need CSS strings rather than colors, <a href="../95-reference/#MaterialDesignColors.hex_scheme-Tuple{AbstractString}"><code class="md-code-inline">hex_scheme</code></a> and <a href="../95-reference/#MaterialDesignColors.hex_scheme_pair-Tuple{AbstractString}"><code class="md-code-inline">hex_scheme_pair</code></a> return the same roles formatted as <code class="md-code-inline">#RRGGBB</code>.</p>
 <p>Roles are derived by fixed rules: secondary shares the seed hue at chroma 16, tertiary rotates 60° at chroma 24, neutrals hold the seed hue at very low chroma, and error is a fixed red. Each role then sits at the tone the MD3 spec assigns it for that mode.</p>
 <h2 id="Contrast" class="md-heading">Contrast<a href="#Contrast" class="md-heading-anchor" aria-label="Link to this section">#</a></h2>
 <div class="md-code-block">
@@ -102,7 +102,7 @@ light[:on_primary_container]</code></pre>
 meets_aa(&quot;#FFFFFF&quot;, &quot;#6750A4&quot;)         # true
 meets_aaa(&quot;#FFFFFF&quot;, &quot;#6750A4&quot;)        # false</code></pre>
 </div>
-<p><a href="../95-reference/#MaterialColors.contrast_ratio-Tuple{AbstractString, AbstractString}"><code class="md-code-inline">contrast_ratio</code></a> also accepts two tones directly, which is cheaper when working in HCT. To find a tone meeting a target ratio against a known one, use <a href="../95-reference/#MaterialColors.lighter_tone-Tuple{Float64, Float64}"><code class="md-code-inline">lighter_tone</code></a> and <a href="../95-reference/#MaterialColors.darker_tone-Tuple{Float64, Float64}"><code class="md-code-inline">darker_tone</code></a>:</p>
+<p><a href="../95-reference/#MaterialDesignColors.contrast_ratio-Tuple{AbstractString, AbstractString}"><code class="md-code-inline">contrast_ratio</code></a> also accepts two tones directly, which is cheaper when working in HCT. To find a tone meeting a target ratio against a known one, use <a href="../95-reference/#MaterialDesignColors.lighter_tone-Tuple{Float64, Float64}"><code class="md-code-inline">lighter_tone</code></a> and <a href="../95-reference/#MaterialDesignColors.darker_tone-Tuple{Float64, Float64}"><code class="md-code-inline">darker_tone</code></a>:</p>
 <div class="md-code-block">
 <button class="md-copy-btn" title="Copy to clipboard" aria-label="Copy code"><span class="md-copy-icon">⧉</span><span class="md-copy-feedback">Copied!</span></button>
 <pre><code class="language-julia">lighter_tone(40.0, 4.5)   # lightest tone with 4.5:1 against tone 40</code></pre>
@@ -135,6 +135,6 @@ isnan(t) &amp;&amp; error(&quot;no tone meets that contrast&quot;)</code></pre>
   <script>hljs.highlightAll();</script>
   <script src="../siteinfo.js"></script>
   <script src="../../versions.js"></script>
-  <script src="../assets/materialdocs.js?v=91c4200c"></script>
+  <script src="../assets/materialdocs.js?v=46da2038"></script>
 </body>
 </html>
