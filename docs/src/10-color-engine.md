@@ -1,10 +1,10 @@
 ```@meta
-CurrentModule = MaterialColors
+CurrentModule = MaterialDesignColors
 ```
 
 # Color Engine
 
-MaterialColors is a pure-Julia port of Google's
+MaterialDesignColors is a pure-Julia port of Google's
 [material-color-utilities](https://github.com/material-foundation/material-color-utilities):
 the CAM16 appearance model, the HCT color space, tonal palettes, Material
 Design 3 scheme generation, and WCAG contrast helpers.
@@ -18,7 +18,7 @@ That is what lets a whole palette be generated from one color without
 hand-tuning.
 
 ```jldoctest
-julia> using MaterialColors
+julia> using MaterialDesignColors
 
 julia> c = hct("#6750A4")
 HCT(hue=299.0, chroma=48.2, tone=40.1)
@@ -38,7 +38,7 @@ input.
 is accepted and converts to and from the RGB family:
 
 ```julia
-using MaterialColors, Colors
+using MaterialDesignColors, Colors
 
 convert(RGB, hct("#6750A4"))     # RGB{Float64}(0.404, 0.314, 0.643)
 hct(colorant"rebeccapurple")     # HCT from any Colorant

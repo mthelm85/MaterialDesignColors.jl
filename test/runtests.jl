@@ -1,9 +1,9 @@
-using MaterialColors
+using MaterialDesignColors
 using Test
 using ColorTypes
 using Colors
 
-@testset "MaterialColors.jl" begin
+@testset "MaterialDesignColors.jl" begin
 
 @testset "HCT round-trip" begin
     # Every hex → HCT → hex must reproduce the original
@@ -134,7 +134,7 @@ end
     p = TonalPalette(280.0, 48.0)
     @test isempty(p.cache)
     precompute!(p)
-    @test length(p.cache) == length(MaterialColors.MD3_TONE_STOPS)
+    @test length(p.cache) == length(MaterialDesignColors.MD3_TONE_STOPS)
 end
 
 @testset "TonalPalette show method" begin

@@ -1,8 +1,8 @@
 ```@meta
-CurrentModule = MaterialColors
+CurrentModule = MaterialDesignColors
 ```
 
-# MaterialColors.jl
+# MaterialDesignColors.jl
 
 **The HCT color space and the Material Design 3 color system, in pure Julia.**
 
@@ -14,7 +14,7 @@ solver, tonal palettes, MD3 scheme generation, and WCAG contrast helpers.
 Give it one color and it gives you a complete, accessible palette.
 
 ```julia
-using MaterialColors
+using MaterialDesignColors
 
 scheme = color_scheme("#6750A4")   # 34 MD3 roles, as Colorants
 scheme[:primary]
@@ -39,11 +39,11 @@ than picking colors and checking them afterwards.
 
 ## Installation
 
-MaterialColors is not yet registered in the General registry, so add it by URL:
+MaterialDesignColors is not yet registered in the General registry, so add it by URL:
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/mthelm85/MaterialColors.jl.git")
+Pkg.add(url = "https://github.com/mthelm85/MaterialDesignColors.jl.git")
 ```
 
 ## At a glance

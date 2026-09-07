@@ -57,9 +57,9 @@ jobs:
         run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using MaterialColors
-            DocMeta.setdocmeta!(MaterialColors, :DocTestSetup, :(using MaterialColors); recursive=true)
-            doctest(MaterialColors)'
+            using MaterialDesignColors
+            DocMeta.setdocmeta!(MaterialDesignColors, :DocTestSetup, :(using MaterialDesignColors); recursive=true)
+            doctest(MaterialDesignColors)'
       - name: Generate and deploy documentation
         run: julia --project=docs docs/make.jl
         env:

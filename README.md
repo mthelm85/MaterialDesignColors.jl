@@ -1,11 +1,11 @@
-# MaterialColors.jl
+# MaterialDesignColors.jl
 
 **The HCT color space and the Material Design 3 color system, in pure Julia.**
 
-[![Development documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://mthelm85.github.io/MaterialColors.jl/dev)
-[![Test workflow status](https://github.com/mthelm85/MaterialColors.jl/actions/workflows/Test.yml/badge.svg?branch=main)](https://github.com/mthelm85/MaterialColors.jl/actions/workflows/Test.yml?query=branch%3Amain)
-[![Docs workflow Status](https://github.com/mthelm85/MaterialColors.jl/actions/workflows/Docs.yml/badge.svg?branch=main)](https://github.com/mthelm85/MaterialColors.jl/actions/workflows/Docs.yml?query=branch%3Amain)
-[![Coverage](https://codecov.io/gh/mthelm85/MaterialColors.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/mthelm85/MaterialColors.jl)
+[![Development documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://mthelm85.github.io/MaterialDesignColors.jl/dev)
+[![Test workflow status](https://github.com/mthelm85/MaterialDesignColors.jl/actions/workflows/Test.yml/badge.svg?branch=main)](https://github.com/mthelm85/MaterialDesignColors.jl/actions/workflows/Test.yml?query=branch%3Amain)
+[![Docs workflow Status](https://github.com/mthelm85/MaterialDesignColors.jl/actions/workflows/Docs.yml/badge.svg?branch=main)](https://github.com/mthelm85/MaterialDesignColors.jl/actions/workflows/Docs.yml?query=branch%3Amain)
+[![Coverage](https://codecov.io/gh/mthelm85/MaterialDesignColors.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/mthelm85/MaterialDesignColors.jl)
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-green.svg)](LICENSE)
 [![BestieTemplate](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/JuliaBesties/BestieTemplate.jl/main/docs/src/assets/badge.json)](https://github.com/JuliaBesties/BestieTemplate.jl)
 
@@ -30,13 +30,13 @@ Not yet registered in the General registry. Add it by URL:
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/mthelm85/MaterialColors.jl.git")
+Pkg.add(url = "https://github.com/mthelm85/MaterialDesignColors.jl.git")
 ```
 
 ## Quick start
 
 ```julia
-using MaterialColors
+using MaterialDesignColors
 
 # A full Material Design 3 scheme — 34 roles — from one seed
 scheme = color_scheme("#6750A4")
@@ -80,7 +80,7 @@ lighter_tone(40.0, 4.5)
 family and passes anywhere a `Colorant` is accepted:
 
 ```julia
-using MaterialColors, Colors
+using MaterialDesignColors, Colors
 
 convert(RGB, hct("#6750A4"))    # RGB{Float64}(0.404, 0.314, 0.643)
 hct(colorant"rebeccapurple")    # HCT from any Colorant

@@ -1,5 +1,5 @@
 """
-    MaterialColors
+    MaterialDesignColors
 
 A pure-Julia implementation of the HCT color space and the Material Design 3
 color system: CAM16 appearance modelling, tonal palettes, scheme generation,
@@ -7,7 +7,7 @@ and WCAG contrast helpers.
 
 Ported from Google's material-color-utilities (Apache-2.0). See NOTICE.
 """
-module MaterialColors
+module MaterialDesignColors
 
 using StaticArrays
 using ColorTypes

@@ -1,8 +1,8 @@
-using MaterialColors
+using MaterialDesignColors
 using Documenter
 using MaterialDocs
 
-DocMeta.setdocmeta!(MaterialColors, :DocTestSetup, :(using MaterialColors); recursive = true)
+DocMeta.setdocmeta!(MaterialDesignColors, :DocTestSetup, :(using MaterialDesignColors); recursive = true)
 
 # Add titles of sections and overrides page titles
 const titles = Dict(
@@ -60,20 +60,20 @@ function list_pages()
 end
 
 makedocs(;
-    modules = [MaterialColors],
+    modules = [MaterialDesignColors],
     authors = "Matt Helm <mthelm85@gmail.com>",
-    repo = "https://github.com/mthelm85/MaterialColors.jl/blob/{commit}{path}#{line}",
-    sitename = "MaterialColors.jl",
+    repo = "https://github.com/mthelm85/MaterialDesignColors.jl/blob/{commit}{path}#{line}",
+    sitename = "MaterialDesignColors.jl",
     # The port's internals are documented but deliberately absent from the
     # manual — see Private = false in the reference page.
     checkdocs = :exports,
     # Documented with MaterialDocs, which is built on this package — the
     # seed below is the MD3 baseline color these docs describe.
     format = Material3(
-        theme = ThemeConfig(seed = "#6750A4", name = "MaterialColors"),
+        theme = ThemeConfig(seed = "#6750A4", name = "MaterialDesignColors"),
         dark_mode = :toggle,
     ),
     pages = list_pages(),
 )
 
-deploydocs(; repo = "github.com/mthelm85/MaterialColors.jl")
+deploydocs(; repo = "github.com/mthelm85/MaterialDesignColors.jl")

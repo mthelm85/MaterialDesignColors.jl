@@ -7,13 +7,13 @@ source but deliberately kept out of the manual.
 ## Module
 
 ```@docs
-MaterialColors
+MaterialDesignColors
 ```
 
 ## Color space
 
 ```@autodocs
-Modules = [MaterialColors]
+Modules = [MaterialDesignColors]
 Pages = ["hct.jl", "colorants.jl"]
 Private = false
 ```
@@ -21,7 +21,7 @@ Private = false
 ## Tonal palettes
 
 ```@autodocs
-Modules = [MaterialColors]
+Modules = [MaterialDesignColors]
 Pages = ["tonal_palette.jl"]
 Private = false
 ```
@@ -29,7 +29,7 @@ Private = false
 ## Schemes
 
 ```@autodocs
-Modules = [MaterialColors]
+Modules = [MaterialDesignColors]
 Pages = ["color_scheme.jl"]
 Private = false
 ```
@@ -37,7 +37,7 @@ Private = false
 ## Contrast
 
 ```@autodocs
-Modules = [MaterialColors]
+Modules = [MaterialDesignColors]
 Pages = ["contrast.jl"]
 Private = false
 ```
