@@ -102,18 +102,6 @@ scheme variants beyond the baseline (content, fidelity, vibrant, expressive),
 and perceptual color-difference metrics — [Colors.jl](https://github.com/JuliaGraphics/Colors.jl)
 already covers the last of those.
 
-## Used by
-
-[MaterialDocs.jl](https://github.com/mthelm85/MaterialDocs.jl), a Documenter.jl
-writer that generates Material Design 3 documentation sites, uses this package
-to generate every color token on a site from one seed.
-
-> [!NOTE]
-> MaterialDocs' live theme editor previously carried its own JavaScript port of
-> this engine. It no longer does — the editor asks Julia for the scheme, so the
-> preview cannot drift from the build. If you vendor this logic elsewhere, the
-> same hazard applies.
-
 ## Licence and attribution
 
 Apache-2.0, matching the upstream project this is derived from. See
