@@ -6,10 +6,12 @@ MaterialDocs = "10bdffc8-969c-4dd4-83f3-742518eccd6b"
 
 [compat]
 Documenter = "1"
+MaterialDocs = "0.1"
 
+# MaterialDocs depends on MaterialDesignColors, so these docs form a cycle — but
+# only at docs-build time. The package itself has no such dependency, and docs/
+# is a separate environment, so nothing circular reaches the registry. The local
+# path wins over the copy MaterialDocs would pull in, so the docs are always
+# built against the working tree.
 [sources]
 MaterialDesignColors = {path = ".."}
-# MaterialDocs depends on MaterialDesignColors, so this is a cycle — but only at
-# docs-build time. The package itself has no such dependency, and docs/ is a
-# separate environment, so nothing circular reaches the registry.
-MaterialDocs = {url = "https://github.com/mthelm85/MaterialDocs.jl.git"}

@@ -26,11 +26,9 @@ seed and know in advance that the text on each surface will be readable.
 
 ## Installation
 
-Not yet registered in the General registry. Add it by URL:
-
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/mthelm85/MaterialDesignColors.jl.git")
+Pkg.add("MaterialDesignColors")
 ```
 
 ## Quick start

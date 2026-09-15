@@ -39,11 +39,9 @@ than picking colors and checking them afterwards.
 
 ## Installation
 
-MaterialDesignColors is not yet registered in the General registry, so add it by URL:
-
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/mthelm85/MaterialDesignColors.jl.git")
+Pkg.add("MaterialDesignColors")
 ```
 
 ## At a glance
